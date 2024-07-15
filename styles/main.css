@@ -43,6 +43,12 @@ body {
 }
 .item {
     width: 140px;
+    transition: all 200ms ease;
+    cursor: pointer;
+}
+.item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 15px 50px 0px rgb(239, 244, 255);
 }
 .item img {
     margin-bottom: 29px;
@@ -74,6 +80,10 @@ body {
     font-size: 13px;
     font-weight: 700;
     text-decoration: none;
+    transition: all 150ms linear;
+}
+.buttons a:hover {
+    transform: scale(1.05);
 }
 .buttons-readmore {
     color: rgb(212, 63, 63);
@@ -147,6 +157,12 @@ body {
     background-size: cover !important;
     border-radius: 5px;
     box-shadow: 0px 15px 100px 0px rgb(229, 235, 248);
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+}
+.image-1:hover, .image-2:hover, .image-3:hover {
+    transform: scale(1.04);
+    opacity: .8;
 }
 .image-1 {
     grid-area: img1;
